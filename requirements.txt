@@ -1,0 +1,8 @@
+->Wire Frame for design
+->Replit and Visual Studio
+->Literature Survey
+-> confluence student trial
+-> GitHub
+-> GCP for students trial
+-> Docker for windows
+->APIs-Zoom API, Restful API
