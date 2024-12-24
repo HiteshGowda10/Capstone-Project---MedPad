@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axiosInstance from '../Helper/axiosInstance';
+import Quiz from './Quiz';  // Import the Quiz component
 
 function UploadBrouchers() {
   const [title, setTitle] = useState('');
@@ -8,6 +9,8 @@ function UploadBrouchers() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
+  const [showQuiz, setShowQuiz] = useState(false); // Add state to control quiz visibility
+  const [score, setScore] = useState(0); // To track quiz score
   const navigate = useNavigate();
 
   // File validation
@@ -67,14 +70,22 @@ function UploadBrouchers() {
       // Reset file input
       e.target.reset();
 
-      // Optional: Redirect after success
-      setTimeout(() => navigate('/materials'), 2000);
+      // Optional: Trigger quiz after success
+      setTimeout(() => setShowQuiz(true), 2000); // Show quiz after 2 seconds
 
     } catch (err) {
       setError(err.response?.data?.message || err.message || 'Error uploading file');
     } finally {
       setLoading(false);
     }
+  };
+
+  // Handle quiz completion
+  const handleQuizComplete = (finalScore) => {
+    setScore(finalScore);
+    setShowQuiz(false);
+    // Optionally navigate or show a message
+    setTimeout(() => navigate('/materials'), 3000);
   };
 
   return (
@@ -142,6 +153,9 @@ function UploadBrouchers() {
           </button>
         </form>
       </div>
+
+      {/* Show quiz after success */}
+      {showQuiz && <Quiz onQuizComplete={handleQuizComplete} />}
 
       {/* Instructions Card */}
       <div className="mt-8 bg-teal-50 p-4 rounded-lg">

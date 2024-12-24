@@ -15,8 +15,8 @@ return (
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:border-teal-500"
             >
                 <option>Choose a doctor</option>
-                <option>Dr. Smith - Cardiologist</option>
-                <option>Dr. Johnson - Pediatrician</option>
+                <option>Dr. Inchara - Cardiologist</option>
+                <option>Dr. Darshan - Pediatrician</option>
             </select>
             </div>
             <div>

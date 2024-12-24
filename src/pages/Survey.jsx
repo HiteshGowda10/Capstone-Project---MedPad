@@ -3,6 +3,7 @@ import { useRecoilValue } from 'recoil';
 import { authState } from '../store/atoms/auth';
 import axiosInstance from '../Helper/axiosInstance';
 import { useNavigate } from 'react-router-dom';
+import RecommendedProducts from '../components/RecommendedProducts';
 
 const Survey = () => {
   const navigate = useNavigate();
@@ -162,6 +163,12 @@ const Survey = () => {
               <div className="text-sm text-red-700">Negative</div>
             </div>
           </div>
+        </div>
+      )}
+
+      {Object.keys(sentimentStats).length > 0 && (
+        <div className="mb-8">
+          <RecommendedProducts />
         </div>
       )}
 

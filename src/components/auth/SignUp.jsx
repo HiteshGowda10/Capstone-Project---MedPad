@@ -117,7 +117,7 @@ export default function SignUp() {
         try {
             // Create FormData for multipart/form-data submission
             const submitData = new FormData();
-            submitData.append('usename', formData.username);
+            submitData.append('username', formData.username);
             submitData.append('email', formData.email);
             submitData.append('password', formData.password);
             submitData.append('avatar', avatar);
