@@ -2,6 +2,18 @@ import mongoose from "mongoose";
 import { DB_NAME } from "../constants.js";
 
 
+import React from "react";
+import ReactDOM from "react-dom";
+import QuizPage from "./components/QuizPage";
+
+ReactDOM.render(
+  <React.StrictMode>
+    <QuizPage />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
+
+
 const connectDB = async () => {
     try {
         const connectionInstance = await mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`)

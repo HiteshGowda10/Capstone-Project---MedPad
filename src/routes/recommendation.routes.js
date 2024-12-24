@@ -1,8 +1,9 @@
-import express from 'express';
-import { getRecommendations } from '../controllers/recommendation.controller.js';
+import { Router } from 'express';
+import { getRecommendations, getProductsBySentiment } from '../controllers/recommendation.controller.js';
 
-const router = express.Router();
+const router = Router();
 
 router.get('/', getRecommendations);
+router.get('/products-by-sentiment', getProductsBySentiment);
 
 export default router;
