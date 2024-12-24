@@ -1,8 +1,9 @@
 ->Wire Frame for design
 ->Replit and Visual Studio
+->Mongo Db
 ->Literature Survey
 -> confluence student trial
 -> GitHub
 -> GCP for students trial
 -> Docker for windows
-->APIs-Zoom API, Restful API
+->Video conference- Jitsi
