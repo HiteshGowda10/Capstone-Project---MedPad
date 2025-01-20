@@ -1,3 +1,19 @@
+Some of the striking features of the platform include –
+ 1. A recommendation system for the MR which will recommend him as to where 
+to reach out with his product. The machine will make this recommendation based on the previous sales figures by analysing 
+them using machine learning algorithms. 
+2. The portal will act as a platform for storage for all the marketing material like 
+brochures, flyers etc. which in current day scenario the MR roams around carrying in his bag. 
+3. The portal also houses a review 
+system wherein the MR can take review for a medicine from a doctor and then a sentiment analysis can be performed on the 
+review data collected. 
+4. MedPad will also have a video conferencing feature with which the MR can video conference with a 
+doctor located in some remote location, where reaching otherwise is not feasible. This is supposed to be the most striking 
+feature of the platform since it has the potential of garnering prescriptions from locations where no other companies have 
+reached and also people in that region are in a need of proper medication, but cannot attain the same due to the remoteness of 
+the location.
+
+Tools:
 ->Wire Frame for design
 ->Replit and Visual Studio
 ->Mongo Db
