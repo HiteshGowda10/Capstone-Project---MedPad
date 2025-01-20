@@ -21,5 +21,4 @@ Tools:
 -> confluence student trial
 -> GitHub
 -> GCP for students trial
--> Docker for windows
 ->Video conference- Jitsi
